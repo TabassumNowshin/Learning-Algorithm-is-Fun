@@ -1,0 +1,126 @@
+/* CSS Variables */
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1 px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-nav a {
+    background: var(--light);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.container h1 {
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    color: green;
+}
+
+/* contents */
+.content {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+    background: var(--light);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: var(--shadow);
+    border: 1px solid black;
+}
+
+.content a {
+    text-decoration: none;
+    color: purple;
+}
+
+
+/* Info */
+.info {
+    text-align: center;
+}
+
+.info div {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5rem 1rem;
+    outline-style: outset;
+    width: 35%;
+    background: var(--light);
+}
+
+
+/* input */
+.input input, button{
+    padding: 7px;
+    margin: 0px 5px;
+}
+
+.input button:hover {
+    background: rgb(19, 224, 19);
+    border: green;
+}
+
+
+/* output */
+.output {
+    border: 1px solid black;
+    background: var(--light);
+}
+
+/* footer */
+footer {
+    margin-top: 1rem;
+    background: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: .2rem;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+/* Media Queries */
+@media(max-width: 700px) {
+    .main-nav ul {
+        grid-template-columns: 1fr;
+    }
+}

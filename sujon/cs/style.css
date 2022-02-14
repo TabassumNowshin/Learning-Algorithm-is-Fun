@@ -1,0 +1,104 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p,
+label,
+input, select, option {
+  font-size: 1.6rem;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 110rem;
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  min-height: calc(100vh - 8rem);
+}
+
+.content {
+  display: none;
+}
+
+.content.toh {
+  display: initial;
+}
+
+/******* TOH ********/
+.toh #tohInputContainer select {
+  min-width: 20rem;
+  margin-left: 2rem;
+}
+.image-container {
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: blanchedalmond;
+  height: 30rem;
+  width: 70rem;
+  border-radius: 1rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.image-container .dividers {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.image-container .dividers .divider {
+  width: 1rem;
+  background-color: rgb(127, 127, 255);
+  border-radius: 1rem 1rem 0 0;
+}
+.image-container .horizontal-line {
+  height: 1rem;
+  background-color: black;
+  border-radius: 1rem;
+}
+.disc-container {
+  position: absolute;
+  bottom: 3rem;
+  /* background-color: aqua; */
+  width: 20rem;
+  display: grid;
+  align-content: flex-end;
+  justify-items: center;
+}
+.disc-container1 {
+  left: 2.5rem;
+}
+.disc-item {
+  height: 3rem;
+  border-radius: 5rem;
+}
+.disc-container2 {
+  left: 26rem;
+}
+.disc-container3 {
+  left: 49.5rem;
+}
+/* .disc-container2 .disc-item,
+.disc-container3 .disc-item {
+  background-color: black;
+  width: 20rem;
+} */

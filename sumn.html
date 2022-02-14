@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sum of n numbers</title>
+</head>
+<body>
+    <div class="container">
+        <!-- navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+<script>
+    function sum_of_digit(n) {
+        if (n == 0)
+        return 0;
+        return (n % 10 + sum_of_digit(parseInt(n / 10)));
+    }
+
+    var num = 12345;
+    var result = sum_of_digit(num);
+    document.write( "Sum of digits in "+ num +" is "+result );
+
+</script>
+
+<!-- Footer -->
+<footer>
+    <p>G2 &copy; 2022</p>
+</footer>
+
+</div>
+</body>
+</html>
+
