@@ -53,6 +53,7 @@ button {
   gap: 30px;
   justify-items: center;
   align-items: center;
+  user-select: none;
 }
 .toh #tohInputContainer select {
   min-width: 100%;

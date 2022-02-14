@@ -29,7 +29,11 @@ window.onload = () => {
     if (!play) {
       play = true
       playBtn.innerHTML = 'Pause'
-      if (uiIndex === -1) Hanoi(totalDiscLength, 1, 3, 2)
+      if (uiIndex === -1) {
+        discInfos = []
+        generateDiscs1(Array.from({ length: totalDiscLength }).map((item, index) => index + 1))
+        Hanoi(totalDiscLength, 1, 3, 2)
+      }
       updateTOH_interval()
     } else {
       clearInterval(uiInterval)
